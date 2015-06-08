@@ -28,16 +28,16 @@ To start you will want the interfaces file, followed by the restiptables, setupi
 
 Modify your raspberry pi interfaces file to match the one here adding in your SSID and PSK where stated, then run restiptables, setupiptables and setuproutes (I have these stored in my /~ directory of my raspberry pi, you will need to make these executable i.e chmod 775 [script_name])
 
-After this sudo reboot the pi and you should have an ethernet to wifi bridge working. (To test this connet your computer via ethernet and try to ping out)
+After this sudo reboot the pi and you should have an ethernet to wifi bridge working. (To test this connect your computer via ethernet and try to ping out)
 
-The next step is to then run the runtor script (remeber it needs to be executable)
+The next step is to then run the runtor script (remember it needs to be executable)
 This script will redirect your internet traffic through the TOR port 9040.
 
 To enable switching this feature of the ethernet to wifi bridge on and off run the python script (ensure the .py file is saved in the same location as the runtor script).
 
-Note, I ssh into my raspi from my linux desktop (ssh pi@....) then run the pytohn script from there.
+Note, I ssh into my raspi from my linux desktop (ssh pi@....) then run the python script from there.
 
-As stated in the Ada fruit tutorial you can check this feature works by refreshing the IP chicken link.
+As stated in the Ada fruit tutorial you can check that this feature works by refreshing the IP chicken link.
 
 Happy Days!
 
